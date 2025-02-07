@@ -11,13 +11,13 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "text-text bg-main border-2 border-neutral-200 dark:border-darkBorder shadow-light dark:shadow-dark hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none dark:border-neutral-800",
+          "text-text bg-main border-2 border-border dark:border-darkBorder shadow-light dark:shadow-dark hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none dark:border-neutral-800",
         noShadow:
-          "text-text bg-main border-2 border-neutral-200 dark:border-darkBorder dark:border-neutral-800",
+          "text-text bg-main border-2 border-border dark:border-darkBorder dark:border-neutral-800",
         neutral:
-          "bg-white dark:bg-secondaryBlack text-text dark:text-darkText border-2 border-neutral-200 dark:border-darkBorder shadow-light dark:shadow-dark hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none dark:border-neutral-800",
+          "bg-white dark:bg-secondaryBlack text-text dark:text-darkText border-2 border-border dark:border-darkBorder shadow-light dark:shadow-dark hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none dark:hover:shadow-none dark:border-neutral-800",
         reverse:
-          "text-text bg-main border-2 border-neutral-200 dark:border-darkBorder hover:translate-x-reverseBoxShadowX hover:translate-y-reverseBoxShadowY hover:shadow-light dark:hover:shadow-dark dark:border-neutral-800",
+          "text-text bg-main border-2 border-border dark:border-darkBorder hover:translate-x-reverseBoxShadowX hover:translate-y-reverseBoxShadowY hover:shadow-light dark:hover:shadow-dark dark:border-neutral-800",
       },
       size: {
         default: "h-10 px-4 py-2",

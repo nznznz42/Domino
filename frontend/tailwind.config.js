@@ -19,7 +19,8 @@ export default {
   			darkBg: '#272933',
   			darkText: '#eeefe9',
   			darkBorder: '#000',
-  			secondaryBlack: '#212121'
+  			secondaryBlack: '#212121',
+			darkNavBorder: "#000",
   		},
   		boxShadow: {
   			light: '-4px 4px 0px 0px #000',
@@ -62,3 +63,4 @@ export default {
   plugins: [require("tailwindcss-animate")],
 }
 
+// TODO: add bigger palette and reorganise
