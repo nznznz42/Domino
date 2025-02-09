@@ -8,7 +8,7 @@ import {
     Background,
     BackgroundVariant, Connection,
     Controls,
-    MiniMap,
+    MiniMap, ProOptions,
     ReactFlow,
     useEdgesState,
     useNodesState
@@ -24,6 +24,7 @@ const initialEdges = [{id: 'e1-2', source: '1', target: '2'}];
 function App() {
     const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
     const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges)
+    const attribution: ProOptions = {hideAttribution: true};
 
     const onConnect = useCallback(
         (params: Connection) => setEdges((eds) => addEdge(params, eds)),
@@ -41,11 +42,13 @@ function App() {
                         onNodesChange={onNodesChange}
                         onEdgesChange={onEdgesChange}
                         onConnect={onConnect}
+                        proOptions={attribution}
+                        colorMode={"light"}
                         fitView
                     >
-                        <Controls position={"bottom-left"}/>
-                        <MiniMap position={"bottom-right"}/>
-                        <Background variant={BackgroundVariant.Dots} gap={12} size={1}/>
+                        <Controls position={"top-left"} className="border-border border-2 shadow"/>
+                        <MiniMap position={"top-right"} className="border-border border-2 shadow-nav"/>
+                        <Background variant={BackgroundVariant.Dots} gap={15} size={2}/>
                     </ReactFlow>
                 </div>
             </div>

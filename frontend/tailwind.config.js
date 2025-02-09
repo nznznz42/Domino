@@ -13,18 +13,34 @@ export default {
   		colors: {
   			main: '#FD9745',
   			overlay: 'rgba(0,0,0,0.8)',
+
+			// Site UI Light Mode
   			bg: '#fff4e0',
   			text: '#000',
   			border: '#000',
+
+			// Site UI Dark Mode
+			darkMain: '#f36e03',
+			darkNavBg: '#333333',
   			darkBg: '#272933',
   			darkText: '#eeefe9',
   			darkBorder: '#000',
   			secondaryBlack: '#212121',
 			darkNavBorder: "#000",
+
+			// Node Colours
+			nodeBlue: '#88aaee',
+			nodeRed: '#ff6b6b',
+			nodeOrange: '#fd9745',
+			nodeGreen: '#a3e636',
+			nodeYellow: '#ffdc58',
+			nodePurple: '#a388ee',
   		},
   		boxShadow: {
   			light: '-4px 4px 0px 0px #000',
-  			dark: '-4px 4px 0px 0px #000'
+  			dark: '-4px 4px 0px 0px #000',
+			nav: "4px 4px 0px 0px #000",
+			navDark: "4px 4px 0px 0px #000",
   		},
   		translate: {
   			boxShadowX: '-4px',
